@@ -1,3 +1,10 @@
+autom4te.cache
+config.log
+config.status
+Makefile
+config.h
+.deps
+.libs
 output/
 win32port/ipch/
 win32port/Debug*/
@@ -14,3 +21,6 @@ win32port/zlib/Release*/
 *.opensdf
 *.sdf
 *.suo
+*.o
+*.lo
+*.la
