@@ -713,6 +713,12 @@ libwebsockets_get_random(struct libwebsocket_context *context,
 LWS_EXTERN int
 lws_send_pipe_choked(struct libwebsocket *wsi);
 
+LWS_EXTERN void
+libwebsockets_set_user_data(struct libwebsocket_context *context, void *user_data);
+
+LWS_EXTERN void *
+libwebsockets_get_user_data(struct libwebsocket_context *context);
+
 LWS_EXTERN unsigned char *
 libwebsockets_SHA1(const unsigned char *d, size_t n, unsigned char *md);
 

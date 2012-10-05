@@ -578,6 +578,19 @@ int lws_send_pipe_choked(struct libwebsocket *wsi)
 	return 0;
 }
 
+void
+libwebsockets_set_user_data(struct libwebsocket_context *context, void *user_data)
+{
+	context->user_data = user_data;
+}
+
+void *
+libwebsockets_get_user_data(struct libwebsocket_context *context)
+{
+	return context->user_data;
+}
+
+
 int
 lws_handle_POLLOUT_event(struct libwebsocket_context *context,
 				struct libwebsocket *wsi, struct pollfd *pollfd)
